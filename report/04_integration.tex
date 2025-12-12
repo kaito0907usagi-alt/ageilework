@@ -6,3 +6,34 @@
 ワークCのプログラムは，Arduinoから無線でのデータの取得と，脈拍の表示の役割を持つ．
 これらの機能を組み合わせることにより，脈拍測定器具を完成させられる．
 \section{方法}
+本ワークでは，ワークA，B，Cで作成した回路やプログラムを組み合わせる．
+ワークAで作成した回路をArduinoのA0ピンに接続し，アナログ値を読み取る．
+ワークBで作成したプログラムをArduinoに書き込み，脈拍の計算を行う．
+さらに，ワークCで作成したプログラムをArduinoに書き込み，Arduinoと無線で通信を行い，データを取得できるようにする．
+これにより，PCに脈拍データを送信することができる．
+本ワークで利用した装置の仕様は表\ref{d1_tools}に示す．
+\begin{table}[H]
+    \centering
+    \caption{本ワークで利用した装置の仕様}
+    \label{d1_tools}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        装置名 & 仕様 &数量 \\\hline
+        マイコンボード& Arduino Uno R4 WiFi &1  \\ \hline
+        PC & MacBook Air M4 &1\\ \hline
+        脈拍計 & RS-E1442 &1 \\ \hline
+        9V電池 & 6LR61Y &1 \\ \hline
+        炭素皮膜抵抗 & 350 $\Omega$ &1 \\ \hline
+        炭素皮膜抵抗 & 3.3k $\Omega$ &1 \\ \hline
+        炭素皮膜抵抗 & 33k $\Omega$ &4 \\ \hline
+        炭素皮膜抵抗 & 1M $\Omega$ &1\\ \hline
+        炭素皮膜抵抗 & 100k $\Omega$ &3 \\ \hline
+        積層セラミックコンデンサ & 10$\mu F$ &2  \\ \hline
+        積層セラミックコンデンサ & 0.01$\mu F$ &1  \\ \hline
+        積層セラミックコンデンサ & 0.1$\mu F$ &1  \\ \hline
+        オペアンプ & LM358N & 1\\ \hline
+        フォトリフレクタ & LBR-127HLD &1 \\ \hline
+        ブレッドボード & 165401020E &1 \\ \hline
+        ジャンパーワイヤー & 165012000E &複数 \\ \hline
+    \end{tabular}
+\end{table}

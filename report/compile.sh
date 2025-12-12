@@ -18,7 +18,7 @@ platex "${TEX_FILE}" || { echo "❌ pLaTeX 1回目失敗"; exit 1; }
 
 echo "--- 2. pBibTeX 実行 (参考文献リスト生成) ---"
 # .auxファイルから pbibtex を実行し、.bbl ファイルを生成
-pbibtex "${AUX_FILE}" || { echo "❌ pBibTeX 失敗"; exit 1; }
+#pbibtex "${AUX_FILE}" || { echo "❌ pBibTeX 失敗"; exit 1; }
 
 echo "--- 3. pLaTeX 実行 (BBLファイル組み込み) ---"
 # 生成された .bbl を組み込む
